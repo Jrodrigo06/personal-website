@@ -1,11 +1,19 @@
 // import { useState } from 'react'
-
-import './App.css'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import { Home} from "./pages/Home";
+import {NotFound} from "./pages/NotFound"
 
 function App() {
 
   return (
-    <h1 className= "h-1 : text-amber-400"> Food</h1>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route index element = {<Home />}/> 
+        <Route path="*" element = {<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+    </>
   )
 }
 
