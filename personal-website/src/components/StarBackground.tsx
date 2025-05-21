@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+
+//Defining types for the parameters of a Star
 type Star = {
     id: number;
     size: number;
@@ -10,19 +12,24 @@ type Star = {
 };  
 
 export const StarBackground = () => {
+    //Create a state named stars to store an array of star objects
     const [stars, setStars] = useState<Star[]>([]); 
 
+    //Calls Generate Stars the [] means it won;t run unless remounted
     useEffect(() => {
         generateStars();
     }, []);
 
     const generateStars = () => {
+        //Determines amount of stars to generate based on height and width
         const numberOfStars = Math.floor(
             (window.innerWidth * window.innerHeight) / 10000
         );
 
+        //Array for new stars
         const newStars = []
 
+        //For loop to generate stars
         for (let i = 0; i < numberOfStars; i++) {
             newStars.push({
                 id:i,
@@ -34,11 +41,13 @@ export const StarBackground = () => {
 
             })
         }
-
+        
+        //Sets stars to the array generated
         setStars(newStars);
 
     };
 
+    //Returns a div with the stars with styling
     return ( 
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0"> 
         {stars.map((star) => (
