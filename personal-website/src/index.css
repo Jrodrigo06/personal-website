@@ -28,6 +28,7 @@
       transform: translateY(-10px);
     }
   }
+  
   @keyframes pulse-subtle {
     0%,
     100% {
