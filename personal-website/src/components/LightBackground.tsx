@@ -20,7 +20,7 @@ export const LightBackground = () => {
         id: i,
         size: Math.random() * 80 + 60, 
         x: Math.random() * 100,
-        y: Math.random() * 40 + 10,
+        y: Math.random() * 40,
         duration: Math.random() * 20 + 25,
       });
     }
@@ -31,22 +31,24 @@ export const LightBackground = () => {
   return (
     <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-sky-200 to-sky-100 overflow-hidden">
       {/* Optional sun */}
-      <div className="absolute top-10 left-10 w-24 h-24 rounded-full bg-yellow-300 opacity-90 shadow-lg animate-slow-spin" />
+      <div className="absolute top-10 left-10 w-24 h-24 rounded-full bg-yellow-300 opacity-90 shadow-lg animate-slow-spin animate-sun" />
 
       {/* Clouds */}
       {clouds.map((cloud) => (
-        <div
-          key={cloud.id}
-          className="cloud animate-cloud"
+        <img
+          key={cloud.id}                               
+          src="./src/assets/Cloud.svg"
+          alt="cloud"
+          className="absolute opacity-80 drop-shadow-lg animate-cloud"
           style={{
-            width: `${cloud.size}px`,
-            height: `${cloud.size * 0.6}px`,
             top: `${cloud.y}vh`,
             left: `${cloud.x}vw`,
+            width: `${cloud.size}px`,
             animationDuration: `${cloud.duration}s`,
           }}
         />
       ))}
-    </div>
+
+    </div>  
   );
 };
