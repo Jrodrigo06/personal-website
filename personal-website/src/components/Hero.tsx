@@ -12,7 +12,8 @@ export const Hero = () => {
             <img
             src={ProfilePic}
             alt="Jerome Rodrigo"
-            className="w-[32vh] h-[32vh] rounded-full border-4 border-background shadow-lg object-cover mx-auto"
+            className="w-[32vh] h-[32vh] rounded-full shadow-lg object-cover mx-auto 
+                        hover:shadow-primary-center transition-shadow duration-700 ease-in-out"
                 />
 
             {/* Left Card */}
@@ -58,7 +59,7 @@ export const Hero = () => {
                         <span className="font-semibold">Hobbies:</span> Cooking, Photography
                     </p>
                     <p>
-                        <span className="font-semibold">Favorite Food:</span> Quessadilla
+                        <span className="font-semibold">Favorite Food:</span> Quessadillas
                     </p>
                 </div>
         </div>

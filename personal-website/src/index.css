@@ -191,7 +191,11 @@
     opacity: 0;
   }
 
-
+@utility shadow-primary-center {
+    box-shadow: 
+      0 0 8px var(--color-primary), 
+      0 0 16px var(--color-primary);
+ }
   
 
 
