@@ -1,8 +1,9 @@
 import { ThemeToggle } from "../components/ThemeToggle";
 import {StarBackground} from '../components/StarBackground';
 import { LightBackground } from "../components/LightBackground";
-import {useTheme} from '../components/ThemeContext';
+import {useTheme} from '../hooks/ThemeContext';
 import { Hero } from '../components/Hero';
+
 
 export const Home = () => {
 
@@ -15,7 +16,7 @@ export const Home = () => {
         {theme === "dark" ? <StarBackground /> : <LightBackground />}
         {/* Navbar */}
         <Hero />
-        {/* Main Content */}
+       
 
         {/* Footer */}
 

@@ -13,7 +13,7 @@ export const Hero = () => {
             src={ProfilePic}
             alt="Jerome Rodrigo"
             className="w-[32vh] h-[32vh] rounded-full shadow-lg object-cover mx-auto 
-                        hover:shadow-primary-center transition-shadow duration-700 ease-in-out"
+                        group-hover:shadow-primary-center transition-shadow duration-700 ease-in-out"
                 />
 
             {/* Left Card */}
