@@ -10,9 +10,8 @@ export const Home = () => {
     const { theme } = useTheme(); 
 
     return <div className = "min-h-dvh bg-background text-foreground overflow-x-hidden">
-        {/* Theme Toggle */}
         <ThemeToggle />
-        {/* Background Effects */}
+        
         {theme === "dark" ? <StarBackground /> : <LightBackground />}
         {/* Navbar */}
         <Hero />

@@ -72,7 +72,7 @@ export const Hero = () => {
                 
                 <h1 className="text-4xl md:6xl font-bold tracking-tight">
                 <span className="opacity-0 animate-fade-in">Hi, I'm</span>
-                <span className="text-primary opacity-0 animate-fade-in-delay-1"> 
+                <span className="text-primary opacity-0 animate-fade-in-delay-1 hover:text-foreground transition-colors duration-500"> 
                     {" "}
                     Jerome</span>
                 <span className="text-gradient opacity-0 animate-fade-in-delay-2">
