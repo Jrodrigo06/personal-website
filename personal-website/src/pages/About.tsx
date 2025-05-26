@@ -12,8 +12,9 @@ export const About = () => {
     const techStack = {
         Languages : ["Java", "Python", "SQL", "TypeScript", "JavaScript", "C#"],
         "Frameworks & Libraries": ["React", "Flask","Next.js", "Tailwind CSS"],
-        "Data Science": ["NumPy", "OpenCV", "Power BI", "Jupyter", "PyTorch", "Scikit-Learn", "Gymnasium", "Matplotlib"],
-        Databases:      ["PostgreSQL", "MongoDB", "FAISS"],
+        "Data Science": ["NumPy", "OpenCV", "Power BI", "Jupyter", "PyTorch", "Scikit-Learn", 
+            "Gymnasium", "Matplotlib", "Anaconda", "Hugging Face"],
+        Databases:      ["PostgreSQL","MySQL","MongoDB", "FAISS"],
         Tools:          ["Git", "Docker","VS Code", "Figma"],
         Cloud: ["AWS", "Azure"]
     }
@@ -57,7 +58,7 @@ export const About = () => {
                         I'm Jerome Rodrigo, a second-year student at Northeastern University majoring in Data Science and Math, and I plan to graduate in May 2028. 
                         </p>
                         <p>
-                        Right now, I'm working as a data analyst at IDEA, Northeastern’s venture accelerator, helping startups and the team make sense of their data
+                        Right now, I'm a data analyst at IDEA, Northeastern’s venture accelerator, helping startups and the team make sense of their data
                         and grow their ideas.
                         </p>
                         <p>  </p>
