@@ -15,6 +15,7 @@ export const SpotifyCard = () => {
 
 
     const [tracks, setTracks] = useState<Track[]>([]);
+    const API_KEY = import.meta.env.VITE_LASTFM_API_KEY;
 
     //Function used to pull my top 3 songs and related info
     useEffect(() => {
@@ -22,9 +23,10 @@ export const SpotifyCard = () => {
       
           try {
             const res = await 
-                fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=jerodrigo06&api_key=cf17c52d09dde6bbba1fb6ce9b65e709&limit=3&period=7&format=json`);
+                fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=jerodrigo06&api_key=${API_KEY}&limit=3&period=7&format=json`);
             const data = await res.json();
             const topTracks = data.toptracks.track;
+            
 
             
             const enrichedTracks = await Promise.all(
@@ -32,7 +34,7 @@ export const SpotifyCard = () => {
                 topTracks.map(async (track: Track) => {
                   try {
                     const res = await fetch(
-                      `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=cf17c52d09dde6bbba1fb6ce9b65e709&artist=${track.artist.name}&track=${track.name}&format=json`);
+                      `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${API_KEY}&artist=${track.artist.name}&track=${track.name}&format=json`);
                     const data = await res.json();
                     return {
                       ...track,
