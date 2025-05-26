@@ -113,7 +113,9 @@
   }
 
   .light {
-    --background: 197 71% 73%
+    --background: 197 71% 73%;
+    --primary: 242 47% 34%;
+    --primary-foreground: 213 31% 91%;
   }
 
   * {

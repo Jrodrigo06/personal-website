@@ -19,12 +19,12 @@ export const About = () => {
     }
 
     const WhatIveUsed = () => (
-        <section className="mt-8 mb-8">
+        <section className="mt-8 mb-4">
           {Object.entries(techStack).map(([category, items]) => (
             <div key={category} className="mb-4">
               <h4 className="text-xl font-medium mb-4">{category}</h4>
       
-              <ul className="flex flex-wrap gap-2">
+              <ul className="flex flex-wrap gap-3">
                 {items.map((tech) => (
                   <li
                     key={tech}
@@ -60,15 +60,15 @@ export const About = () => {
                         Right now, I'm working as a data analyst at IDEA, Northeastern’s venture accelerator, helping startups and the team make sense of their data
                         and grow their ideas.
                         </p>
+                        <p>  </p>
                         <p>
                             I'm from Albany, NY and now am mostly in Boston at Northeastern. Outside of class and work, I spend a lot of my free time cooking, gaming with friends, watching shows,
                             or with a camera taking pictures of whatever catches my eye!
                         </p>
 
-                        <p> I’ve always loved experimenting things, whether it was putting together a
-                            custom PC or messing with effects in video-editing to see what looked better. 
-                            Diving into projects like this taught me how to learn quickly and independently!
-                        </p>
+                        </div>
+                    <div className='mt-8'> 
+                        <SpotifyCard />
                     </div>
 
                     
@@ -83,7 +83,7 @@ export const About = () => {
 
     </div>
     
-   <SpotifyCard />
+   
   </div>
    )
 }
