@@ -2,6 +2,7 @@ import {StarBackground} from '../components/StarBackground';
 import { LightBackground } from "../components/LightBackground";
 import {useTheme} from '../hooks/ThemeContext';
 import { ThemeToggle } from '../components/ThemeToggle';
+import { SpotifyCard } from '../components/SpotifyCard';
 
 
 export const About = () => {
@@ -71,18 +72,18 @@ export const About = () => {
                     </div>
 
                     
-            </div>
+                </div>
 
         {/* RIGHT SIDE */}
             <div className="relative w-full md:w-1/3 md:absolute md:left-[58.3333%] p-6 bg-background/30 backdrop-blur-sm rounded-xl shadow-primary-center">
                 <h3 className="text-3xl font-semibold mb-4">What I've used</h3>
                 <WhatIveUsed />
             </div>
-            </div>
+        </div>
 
     </div>
-  
-   
+    
+   <SpotifyCard />
   </div>
    )
 }
