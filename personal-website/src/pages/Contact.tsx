@@ -9,7 +9,7 @@ import emailjs from "@emailjs/browser";
 export const Contact = () => {
 
     emailjs.init({
-        publicKey: '-ISkJnvzE9tlYcep0'
+        publicKey: import.meta.env.VITE_EMAILJS_API_KEY
     })
     
 
