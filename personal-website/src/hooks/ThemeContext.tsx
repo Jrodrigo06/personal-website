@@ -15,7 +15,7 @@ interface ThemeContextType {
     const[theme, setTheme] = useState<Theme>("light");
     
     useEffect(() => {
-      const storedTheme = (localStorage.getItem("theme") as Theme) || "light";
+      const storedTheme = (localStorage.getItem("theme") as Theme) || "dark";
       document.documentElement.classList.toggle("dark", storedTheme === "dark");
       document.documentElement.classList.toggle("light", storedTheme === "light");
       setTheme(storedTheme);
