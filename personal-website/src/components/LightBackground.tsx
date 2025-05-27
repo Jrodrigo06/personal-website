@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Cloud from "../assets/Cloud.svg";
 
 type Cloud = {
   id: number;
@@ -37,7 +38,7 @@ export const LightBackground = () => {
       {clouds.map((cloud) => (
         <img
           key={cloud.id}                               
-          src="./src/assets/Cloud.svg"
+          src={Cloud}
           alt="cloud"
           className="absolute opacity-80 drop-shadow-lg animate-cloud"
           style={{
