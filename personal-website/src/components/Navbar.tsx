@@ -2,6 +2,7 @@ import { cn } from "../lib/utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { X, Menu } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 
 const navItems = [
@@ -41,12 +42,13 @@ export const Navbar = () => {
             </a>
 
             {/* desktop nav */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-8 items-center">
                 {navItems.map((item, key) => (
-                    <a key = {key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                    <Link key = {key} to={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
                         {item.name}
-                    </a>
+                    </Link>
                 ))}
+                <ThemeToggle />
             </div>
 
             {/* Mobile nav */}
@@ -59,6 +61,7 @@ export const Navbar = () => {
                 {isOpen ? <X size={24} /> : <Menu size={24} />}{" "}
             </button>    
 
+            
 
             <div className={cn('fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center',
                 "transition-all duration-300 md:hidden",
@@ -75,7 +78,9 @@ export const Navbar = () => {
                         {item.name}
                     </Link>
                 ))}
+                
                 </div>
+            
             </div> 
 
         </div>

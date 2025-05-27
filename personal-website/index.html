@@ -5,6 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/jr.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jerome Rodrigo</title>
+    <script>
+      (function() {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = stored === 'dark' || (!stored && prefersDark);
+    
+        document.documentElement.classList.toggle('dark', isDark);
+        document.documentElement.classList.toggle('light', !isDark);
+      })();
+    </script>
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
     <div id="root"></div>

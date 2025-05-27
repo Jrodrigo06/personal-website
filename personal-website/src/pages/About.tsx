@@ -1,13 +1,18 @@
 import {StarBackground} from '../components/StarBackground';
 import { LightBackground } from "../components/LightBackground";
 import {useTheme} from '../hooks/ThemeContext';
-import { ThemeToggle } from '../components/ThemeToggle';
 import { SpotifyCard } from '../components/SpotifyCard';
+import { useState, useEffect } from 'react';
 
 
 export const About = () => {
 
     const { theme } = useTheme(); 
+
+    const [mounted, setMounted] = useState(false);
+        useEffect(() => {
+        setMounted(true);
+        }, []);
 
     const techStack = {
         Languages : ["Java", "Python", "SQL", "TypeScript", "JavaScript", "C#"],
@@ -44,8 +49,7 @@ export const About = () => {
 
    return( 
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
-        <ThemeToggle />
-            {theme === "dark" ? <StarBackground /> : <LightBackground />}
+            {mounted && (theme === "dark" ? <StarBackground /> : <LightBackground />)}
             {/* left column */}
         <div className="container mx-auto px-4 pt-24 pb-32 relative z-10">
             
