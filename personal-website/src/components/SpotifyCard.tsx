@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import SpotifyPng from '../assets/Spotify.png'
 
 
 export const SpotifyCard = () => {
@@ -67,7 +67,7 @@ export const SpotifyCard = () => {
         <div className="relative rounded-xl bg-[#212121] w-full h-s p-4 pd-16 text-[#b3b3b3] shadow-lg"
             style={{ boxShadow: '0 0 10px #1DB954'}}>
           <div className="flex items-center mb-6">
-          <img src="./src/assets/Spotify.png" className='h-12'></img>
+          <img src={SpotifyPng} className='h-12'></img>
          
           <h1 className="w-full mb-2 font-semibold text-[#B3B3B3] text-l">My Top Songs In The Last Week</h1>
           </div>
