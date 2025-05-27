@@ -72,12 +72,12 @@ export const Contact = () => {
                         <div className="space-y-8">
                             <h3 className="text-2xl font-semibold mb-6"> Contact Information</h3>
 
-                            <div className="space-y-6 justify-center">
-                                <div className='flex items-start space-x-4'>
+                            <div className="space-y-6 w-fit mx-auto">
+                                <div className='flex items-center space-x-4'>
                                     <div className='p-3 rounded-full bg-primary/10'> 
                                         <Mail className="h-6 w-6 text-primary"/>{" "}
                                     </div>
-                                    <div className="">
+                                    <div>
                                         <h4 className="font-medium"> Email</h4>
                                         <a href="mailto:jeromerodrigo06@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                                             jeromerodrigo06@gmail.com
