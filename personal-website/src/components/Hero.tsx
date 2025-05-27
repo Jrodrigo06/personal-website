@@ -20,7 +20,7 @@ export const Hero = () => {
             <div
                 className="
                 absolute left-0 top-1/2 -translate-y-1/2
-                w-[70v] p-3 bg-background border border-white/50 rounded-lg
+                w-[70v] p-3 bg-primary/40 border border-white/50 rounded-lg
                 opacity-0 -translate-x-[1rem]
                 group-hover:opacity-100 group-hover:-translate-x-[250px]
                 transition-all duration-1000
@@ -40,11 +40,10 @@ export const Hero = () => {
                 </div>
             </div>
 
-            {/* Right Card */}
             <div
                 className="
                 absolute right-0 top-1/2 -translate-y-1/2
-                w-[70v] p-3 bg-background border border-white/50 rounded-lg
+                w-[70v] p-3 bg-primary/40 border border-white/50 rounded-lg
                 opacity-0 translate-x-[1rem]
                 group-hover:opacity-100 group-hover:translate-x-[250px]
                 transition-all duration-1000
@@ -66,7 +65,6 @@ export const Hero = () => {
         </div>
             
 
-            {/**                   */}            
 
             <div className="space-y-6">
                 
