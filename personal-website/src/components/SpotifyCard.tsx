@@ -23,7 +23,7 @@ export const SpotifyCard = () => {
       
           try {
             const res = await 
-                fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=jerodrigo06&api_key=${API_KEY}&limit=3&period=7&format=json`);
+                fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=jerodrigo06&api_key=${API_KEY}&limit=5&period=7day&format=json`);
             const data = await res.json();
             const topTracks = data.toptracks.track;
             

@@ -17,8 +17,9 @@ export const About = () => {
     const techStack = {
         Languages : ["Java", "Python", "SQL", "TypeScript", "JavaScript", "C#"],
         "Frameworks & Libraries": ["React", "Flask","Next.js", "Tailwind CSS"],
-        "Data Science": ["NumPy", "OpenCV", "Power BI", "Jupyter", "PyTorch", "Scikit-Learn", 
-            "Gymnasium", "Matplotlib", "Anaconda", "Hugging Face"],
+        "Data Science / ML": ["NumPy", "OpenCV",  "Jupyter", "PyTorch", "Scikit-Learn", 
+            "Gymnasium", "Anaconda", "Hugging Face"],
+        "Data Visualization" : ["Matplotlib","Power BI", "Tableu", "Excel"],
         Databases:      ["PostgreSQL","MySQL","MongoDB", "FAISS"],
         Tools:          ["Git", "Docker","VS Code", "Figma"],
         Cloud: ["AWS", "Azure"]
