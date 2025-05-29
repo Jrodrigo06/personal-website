@@ -62,10 +62,6 @@ export const About = () => {
                         <p>
                         I'm Jerome Rodrigo, a second-year student at Northeastern University majoring in Data Science and Math, and I plan to graduate in May 2028. 
                         </p>
-                        <p>
-                        Right now, I'm a data analyst at IDEA, Northeastern’s venture accelerator, helping startups and the team make sense of their data
-                        and grow their ideas.
-                        </p>
                         <p>  </p>
                         <p>
                             I'm from Albany, NY and now am mostly in Boston at Northeastern. Outside of class and work, I spend a lot of my free time cooking, gaming with friends, watching shows,
