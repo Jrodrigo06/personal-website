@@ -52,7 +52,7 @@ export const About = () => {
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
             {mounted && (theme === "dark" ? <StarBackground /> : <LightBackground />)}
             {/* left column */}
-        <div className="container mx-auto px-4 pt-24 pb-32 relative z-10">
+        <div className="container mx-auto px-4 pt-24 pb-40 relative z-10">
             
             <div className="flex flex-col md:flex-row gap-8">
             {/* LEFT SIDE */}
@@ -76,11 +76,12 @@ export const About = () => {
                     
                 </div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT SIDE */} 
             <div className="relative w-full md:w-1/3 md:absolute md:left-[58.3333%] p-6 bg-background/30 backdrop-blur-sm rounded-xl shadow-primary-center">
                 <h3 className="text-3xl font-semibold mb-4">What I've used</h3>
                 <WhatIveUsed />
             </div>
+
         </div>
 
     </div>
