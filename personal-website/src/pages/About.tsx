@@ -14,16 +14,16 @@ export const About = () => {
         setMounted(true);
         }, []);
 
-    const techStack = {
-        Languages : ["Java", "Python", "SQL", "TypeScript", "JavaScript", "C#"],
-        "Frameworks & Libraries": ["React", "Flask","Next.js", "Tailwind CSS"],
-        "Data Science / ML": ["NumPy", "OpenCV",  "Jupyter", "PyTorch", "Scikit-Learn", 
-            "Gymnasium", "Anaconda", "Hugging Face"],
-        "Data Visualization" : ["Matplotlib","Power BI", "Tableu", "Excel"],
-        Databases:      ["PostgreSQL","MySQL","MongoDB", "FAISS"],
-        Tools:          ["Git", "Docker","VS Code", "Figma"],
-        Cloud: ["AWS", "Azure"]
-    }
+        const techStack = {
+          Languages : ["Java", "Python", "SQL", "TypeScript", "JavaScript", "C#"],
+          "Frameworks & Libraries": ["React", "Flask","Next.js", "Tailwind CSS", "Streamlit"],
+          "Data Science / ML": ["NumPy", "OpenCV",  "Jupyter", "PyTorch", "Scikit-Learn", 
+              "Gymnasium", "Anaconda", "Hugging Face"],
+          "Data Visualization" : ["Matplotlib","Power BI", "Tableu", "Excel"],
+          Databases:      ["PostgreSQL","MySQL","MongoDB", "FAISS"],
+          Tools:          ["Git", "Docker","VS Code", "Figma"],
+          Cloud: ["AWS", "Azure", "Databricks"]
+      }
 
     const WhatIveUsed = () => (
         <section className="mt-8 mb-4">
