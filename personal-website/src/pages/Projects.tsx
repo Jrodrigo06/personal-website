@@ -11,7 +11,7 @@ const projects = [
         description: `A simple web app that gives nutrition advice using a 
         Retrieval-Augmented Generation (RAG) system. It answers user questions by 
         retrieving relevant info from a document, and then generate responses with TinyLlama`,
-        tags: ["React", "FastAPI", "MongoDB", "FAISS", "TinyLlama"],
+        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama"],
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
 
