@@ -8,9 +8,7 @@ const projects = [
     {
         id: 1,
         title: "RAG Nutrition Recommender",
-        description: `A simple web app that gives nutrition advice using a 
-        Retrieval-Augmented Generation (RAG) system. It answers user questions by 
-        retrieving relevant info from a document, and then generate responses with TinyLlama`,
+        description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using TinyLlama.`,
         tags: ["React", "FastAPI", "MongoDB", "FAISS", "TinyLlama"],
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
@@ -18,9 +16,8 @@ const projects = [
     {
         id: 2,
         title: "Blackjack RL",
-        description: `A reinforcement learning project where I trained a Deep Q-Network (DQN) to play Blackjack. 
-        The AI learned to make decisions through trial and error and reached a win/loss rate close to optimal play. 
-        I also wrote a math paper exploring why I decided to use RL and DQN and then explaining the math behind it`,
+        description: `A reinforcement learning project where I trained a Deep Q-Network (DQN) to play Blackjack, enabling it to make optimal decisions through trial-and-error learning.
+         Also authored a paper explaining the math behind DQN and why I used it for this project.`,
         tags: ['OpenCV - In Progress', "Python", "Gymnasium"],
         githubUrl: "https://github.com/Jrodrigo06/BlackJackOpenCV"
     },
@@ -28,8 +25,8 @@ const projects = [
     {
         id: 3,
         title: "Healthcare Billing Prediction",
-        description: `A machine learning project to predict medical costs based on a data set. I trained models like Random Forest and CatBoost, 
-        used feature engineering and tuning to improve performance, and built a very simple web app with Flask to make predictions interactively.`,
+        description: `A machine learning project where I used machine learning models (Random Forest, CatBoost) to predict medical costs. 
+        Improved accuracy through feature engineering and model tuning, and built a simple interactive web app using Flask.`,
         tags: ['Python', 'Flask', 'Jupyter', 'Scikit-learn', 'Anaconda'],
         githubUrl: "https://github.com/Jrodrigo06/MLProject-HealthCareBilling"
 
