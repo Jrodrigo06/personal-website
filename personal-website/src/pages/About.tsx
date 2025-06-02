@@ -18,7 +18,7 @@ export const About = () => {
           Languages : ["Java", "Python", "SQL", "TypeScript", "JavaScript", "C#"],
           "Frameworks & Libraries": ["React", "Flask","Next.js", "Tailwind CSS", "Streamlit"],
           "Data Science / ML": ["NumPy", "OpenCV",  "Jupyter", "PyTorch", "Scikit-Learn", 
-              "Gymnasium", "Anaconda", "Hugging Face"],
+              "Gymnasium", "Anaconda", "Hugging Face", "LangChain"],
           "Data Visualization" : ["Matplotlib","Power BI", "Tableu", "Excel"],
           Databases:      ["PostgreSQL","MySQL","MongoDB", "FAISS"],
           Tools:          ["Git", "Docker","VS Code", "Figma"],

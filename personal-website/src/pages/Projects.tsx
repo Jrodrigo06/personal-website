@@ -9,7 +9,7 @@ const projects = [
         id: 1,
         title: "RAG Nutrition Recommender",
         description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using TinyLlama.`,
-        tags: ["React", "FastAPI", "MongoDB", "FAISS", "TinyLlama"],
+        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama"],
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
 
