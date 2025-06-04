@@ -20,7 +20,7 @@ export const About = () => {
           "Data Science / ML": ["NumPy", "OpenCV",  "Jupyter", "PyTorch", "Scikit-Learn", 
               "Gymnasium", "Anaconda", "Hugging Face", "LangChain"],
           "Data Visualization" : ["Matplotlib","Power BI", "Tableu", "Excel"],
-          Databases:      ["PostgreSQL","MySQL","MongoDB", "FAISS"],
+          Databases:      ["PostgreSQL","MySQL","MongoDB", "ChromaDB"],
           Tools:          ["Git", "Docker","VS Code", "Figma"],
           Cloud: ["AWS", "Azure", "Databricks"]
       }

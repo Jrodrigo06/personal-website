@@ -9,7 +9,7 @@ const projects = [
         id: 1,
         title: "RAG Nutrition Recommender",
         description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using TinyLlama.`,
-        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama"],
+        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama", "ChromaDB"],
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
 
@@ -89,7 +89,7 @@ export const Projects = () => {
 
                 <div className="text-center mt-12">
                     <a className="cosmic-button w-fit flex items-center mx-auto gap-2" 
-                    href="github.com/Jrodrigo06"
+                    href="https://github.com/Jrodrigo06"
                     target="_blank">
                         Check My GitHub <ArrowRight size={16} />
                          </a>
