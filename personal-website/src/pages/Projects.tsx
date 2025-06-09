@@ -8,8 +8,8 @@ const projects = [
     {
         id: 1,
         title: "RAG Nutrition Recommender",
-        description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using TinyLlama.`,
-        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama", "ChromaDB"],
+        description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using Llama 2.`,
+        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama", "ChromaDB", "Llama 2"],
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
 
@@ -30,6 +30,13 @@ const projects = [
         tags: ['Python', 'Flask', 'Jupyter', 'Scikit-learn', 'Anaconda'],
         githubUrl: "https://github.com/Jrodrigo06/MLProject-HealthCareBilling"
 
+    },
+    
+    {
+        id: 4,
+        title: "Personal Website",
+        description : `This webiste I made to learn React and Typescript and to show what I've worked on, who I am as a person, and my goals for the future!`,
+        tags: ['React', 'Typescript', 'Tailwind CSS']
     }
 ]
 
