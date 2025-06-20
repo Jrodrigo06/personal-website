@@ -7,9 +7,9 @@ import { LightBackground } from "../components/LightBackground"
 const projects = [
     {
         id: 1,
-        title: "RAG Nutrition Recommender",
+        title: "RAG Nutrition Recommender - In Progress",
         description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using Llama 2.`,
-        tags: ["React", "FastAPI", "MongoDB", "LangChain", "TinyLlama", "ChromaDB", "Llama 2"],
+        tags: ["React", "FastAPI", "MongoDB", "LangChain", "ChromaDB", "Llama 2"],
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
 
@@ -21,6 +21,7 @@ const projects = [
         tags: ['OpenCV - In Progress', "Python", "Gymnasium"],
         githubUrl: "https://github.com/Jrodrigo06/BlackJackOpenCV"
     },
+
 
     {
         id: 3,
@@ -56,6 +57,7 @@ export const Projects = () => {
         {mounted && (theme === "dark" ? <StarBackground /> : <LightBackground />)}
         <section id="projects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
+                <img></img>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center"> 
                     Featured 
                     <span className="text-primary"> Projects </span>
