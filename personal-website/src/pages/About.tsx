@@ -22,7 +22,7 @@ export const About = () => {
           "Data Visualization" : ["Matplotlib","Power BI", "Tableu", "Excel"],
           Databases:      ["PostgreSQL","MySQL","MongoDB", "ChromaDB"],
           Tools:          ["Git", "Docker","VS Code", "Figma"],
-          Cloud: ["AWS", "Azure", "Databricks"]
+          Cloud: ["AWS", "Azure"]
       }
 
     const WhatIveUsed = () => (
