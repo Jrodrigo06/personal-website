@@ -10,7 +10,7 @@ import healthCare from "../assets/healthcare.png"
 const projects = [
     {
         id: 1,
-        title: "RAG Nutrition Recommender - In Progress",
+        title: "RAG Nutrition Recommender",
         description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using Llama 2.`,
         tags: ["React", "FastAPI", "MongoDB", "LangChain", "ChromaDB", "Llama 2", "JWT"],
         image: ragImg,
