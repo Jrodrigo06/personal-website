@@ -3,13 +3,17 @@ import { useTheme } from "../hooks/ThemeContext"
 import { useEffect, useState } from "react"
 import { StarBackground } from "../components/StarBackground"
 import { LightBackground } from "../components/LightBackground"
+import ragImg from "../assets/rag-image.png"
+import blackJack from "../assets/blackjack.png"
+import healthCare from "../assets/healthcare.png"
 
 const projects = [
     {
         id: 1,
         title: "RAG Nutrition Recommender - In Progress",
         description: `A simple web app that gives nutrition advice by answering questions using information from documents with RAG, using Llama 2.`,
-        tags: ["React", "FastAPI", "MongoDB", "LangChain", "ChromaDB", "Llama 2"],
+        tags: ["React", "FastAPI", "MongoDB", "LangChain", "ChromaDB", "Llama 2", "JWT"],
+        image: ragImg,
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
     },
 
@@ -19,6 +23,7 @@ const projects = [
         description: `A reinforcement learning project where I trained a Deep Q-Network (DQN) to play Blackjack, enabling it to make optimal decisions through trial-and-error learning.
          Also authored a paper explaining the math behind DQN and why I used it for this project.`,
         tags: ['OpenCV - In Progress', "Python", "Gymnasium"],
+        image: blackJack,
         githubUrl: "https://github.com/Jrodrigo06/BlackJackOpenCV"
     },
 
@@ -29,6 +34,7 @@ const projects = [
         description: `A machine learning project where I used machine learning models (Random Forest, CatBoost) to predict medical costs. 
         Improved accuracy through feature engineering and model tuning, and built a simple interactive web app using Flask.`,
         tags: ['Python', 'Flask', 'Jupyter', 'Scikit-learn', 'Anaconda'],
+        image: healthCare,
         githubUrl: "https://github.com/Jrodrigo06/MLProject-HealthCareBilling"
 
     },
@@ -69,6 +75,13 @@ export const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
                     {projects.map((project, key) => (
                         <div key={key} className='group text-center bg-card rounded-lg overflow-hidden shadow-xs card-hover'>  
+                        {project.image && (
+                            <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-40 object-cover object-top"   
+                            />
+                        )}
                             <div className="p-5">
                             <h3 className="text-xl font-semibold mb-3 hover:text-primary transition-colors duration-300"> {project.title} </h3>
                                 <div className="flex flex-wrap gap-2 mb-4 justify-center items-center">                              
