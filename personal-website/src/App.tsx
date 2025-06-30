@@ -1,6 +1,5 @@
 // import { useState } from 'react'
-import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom"
-import { useEffect } from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 import { Home } from "./pages/Home";
 import {NotFound} from "./pages/NotFound"
 import { Navbar } from "./components/Navbar";
@@ -12,14 +11,6 @@ import { Photos } from "./pages/Photos";
 
 function App() {
 
-  function BlackJackRedirect() {
-    useEffect(() => {
-      // this is a real browser navigation, not just React Router
-      window.location.href = "/BlackJackRL.pdf";
-    }, []);
-  
-    return null;
-  }
 
 
   return (
