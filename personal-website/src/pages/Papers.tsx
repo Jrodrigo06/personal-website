@@ -10,7 +10,7 @@ import graphdta from "../assets/graphdta.png"
 const papers = [
     {
         id: 1,
-        title: "GraphDTA Reimplementation",
+        title: "GraphDTA Reimplementation - In Progress",
         description: `A self-authored paper explaining the mathematical foundations of my GraphDTA replication, including GNN theory, matrix operations, normalization, and more.`,
         tags: [
         'Graph Neural Networks',

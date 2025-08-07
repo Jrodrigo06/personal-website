@@ -20,7 +20,7 @@ const projects = [
 
     {
         id: 5,
-        title: "GraphDTA Reimplementation",
+        title: "GraphDTA Reimplementation - In Progress",
         description: `A reimplementation of the GraphDTA model for predicting drug-target binding affinity using graph neural networks. 
         Wrote a paper explaining my implementation and the mathematical foundations behind it.`,
         tags: ["PyTorch", "Deep Learning", "Graph Neural Networks", "Bioinformatics", "Python"],
