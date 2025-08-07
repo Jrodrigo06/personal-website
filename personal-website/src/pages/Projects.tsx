@@ -6,6 +6,7 @@ import { LightBackground } from "../components/LightBackground"
 import ragImg from "../assets/rag-image.png"
 import blackJack from "../assets/blackjack.png"
 import healthCare from "../assets/healthcare.png"
+import graphdta from "../assets/graphdta.png"
 
 const projects = [
     {
@@ -15,6 +16,17 @@ const projects = [
         tags: ["React", "FastAPI", "MongoDB", "LangChain", "ChromaDB", "Llama 2", "JWT"],
         image: ragImg,
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
+    },
+
+    {
+        id: 5,
+        title: "GraphDTA Reimplementation",
+        description: `A reimplementation of the GraphDTA model for predicting drug-target binding affinity using graph neural networks. 
+        Wrote a paper explaining my implementation and the mathematical foundations behind it.`,
+        tags: ["PyTorch", "Deep Learning", "Graph Neural Networks", "Bioinformatics", "Python"],
+        image: graphdta,
+        githubUrl: "https://github.com/Jrodrigo06/GraphDTA-Replication"
+
     },
 
     {
