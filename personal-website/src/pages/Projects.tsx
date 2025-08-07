@@ -24,7 +24,7 @@ const projects = [
         title: "GraphDTA Reimplementation - In Progress",
         description: `A reimplementation of the GraphDTA model for predicting drug-target binding affinity using graph neural networks. 
         Wrote a paper explaining my implementation and the mathematical foundations behind it.`,
-        tags: ["PyTorch", "Deep Learning", "Graph Neural Networks", "Bioinformatics", "Python"],
+        tags: ["PyTorch", "Deep Learning", "RDkit", "Python"],
         image: graphdta,
         githubUrl: "https://github.com/Jrodrigo06/GraphDTA-Replication"
 
