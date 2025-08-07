@@ -7,6 +7,7 @@ import ragImg from "../assets/rag-image.png"
 import blackJack from "../assets/blackjack.png"
 import healthCare from "../assets/healthcare.png"
 import graphdta from "../assets/graphdta.png"
+import portfolio from "../assets/portfolio.png"
 
 const projects = [
     {
@@ -55,7 +56,10 @@ const projects = [
         id: 4,
         title: "Personal Website",
         description : `This webiste I made to learn React and Typescript and to show what I've worked on, who I am as a person, and my goals for the future!`,
-        tags: ['React', 'Typescript', 'Tailwind CSS']
+        tags: ['React', 'Typescript', 'Tailwind CSS'],
+        image: portfolio,
+        githubUrl: "https://github.com/Jrodrigo06/personal-website"
+
     }
 ]
 
