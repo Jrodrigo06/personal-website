@@ -7,6 +7,7 @@ import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 import { Photos } from "./pages/Photos";
+import { Papers } from "./pages/Papers";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/projects" element = {<Projects />} />
         <Route path="/contact" element = {<Contact />} />
         <Route path="/photos" element = {<Photos />} />
+        <Route path="/papers" element = {<Papers />} />
       </Routes>
     </BrowserRouter>
     </>
