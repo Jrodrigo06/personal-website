@@ -4,7 +4,7 @@ import { LightBackground } from "../components/LightBackground";
 import { useTheme } from "../hooks/ThemeContext";
 import { useMemo } from "react";
 
-const modules = import.meta.glob<{ default: string }>("../assets/photos/*.{jpg,png,webp}", { eager: true });
+const modules = import.meta.glob<{ default: string }>("../assets/photos/*.{jpg,png,webp,JPG,PNG,WEBP}", { eager: true });
 
 export const Photos = () => {
 
@@ -15,10 +15,17 @@ export const Photos = () => {
         setMounted(true);
         }, []);
     
-    const photos = useMemo(
-        () => Object.values(modules).map((m) => m.default),
-         []
-        );
+    const photos = useMemo(() => {
+  const arr = Object.values(modules).map((m) => m.default);
+
+
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  return arr;
+}, []);
 
     
     
@@ -33,7 +40,7 @@ export const Photos = () => {
                     src={src}
                     loading="lazy"
                     alt={`Photo ${i + 1}`}
-                    className="w-full break-inside-avoid rounded-lg object-cover z-10"
+                    className="w-full rounded-lg object-cover z-10"
                     />
                 ))}
                 </div>

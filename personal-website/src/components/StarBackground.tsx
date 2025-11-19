@@ -72,14 +72,14 @@ export const StarBackground = () => {
         //Determines amount of meteors to generate based on height and width
         const numberOfMeteors = 4;
 
-        //Array for new stars
+        //Array for new meteor
         const newMeteors = [];
 
-        //For loop to generate stars
+        //For loop to generate meteors
         for (let i = 0; i < numberOfMeteors; i++) {
             newMeteors.push({
                 id:i,
-                size: Math.random() * 2 + 1,
+                size: Math.random() * 3.2 + 1,
                 x: Math.random() * 100,
                 y: Math.random() * 20 ,
                 delay: Math.random() * 15,
@@ -112,8 +112,8 @@ export const StarBackground = () => {
         {meteors.map((meteor) => (
             <div key={meteor.id} className="meteor animate-meteor" 
             style={{
-                width: meteor.size * 50 + "px",
-                height: meteor.size * 2 + "px",
+                width: meteor.size * 65 + "px",
+                height: meteor.size * 3 + "px",
                 left: meteor.x + "%",
                 top: meteor.y + "%",
                 animationDelay: meteor.delay + "s",

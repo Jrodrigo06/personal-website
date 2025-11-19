@@ -6,8 +6,23 @@ import { LightBackground } from "../components/LightBackground"
 import ragImg from "../assets/rag-image.png"
 import blackJack from "../assets/blackjack.png"
 import healthCare from "../assets/healthcare.png"
+import graphdta from "../assets/graphdta.png"
+import portfolio from "../assets/portfolio.png"
+import trainingInternalsImg from "../assets/grad_descent.png"
 
 const projects = [
+    {
+        id: 0,
+        title: "Training Internals (In Progress)",
+        description: `An in-progress, systems-focused project exploring how neural network training actually works under the hood.
+        Building a C++ training loop from first principles, including forward passes, loss computation, and manual backpropagation
+        without relying on autodiff or high-level ML frameworks. Planned extensions include deeper networks, controlled training
+        experiments, gradient flow visualization, and a lightweight educational frontend.`,
+        tags: ["C++", "Machine Learning Internals", "Backpropagation", "Numerical Computing"],
+        image: trainingInternalsImg,
+        githubUrl: "https://github.com/Jrodrigo06/training-internals"
+    },
+
     {
         id: 1,
         title: "RAG Nutrition Recommender",
@@ -15,6 +30,17 @@ const projects = [
         tags: ["React", "FastAPI", "MongoDB", "LangChain", "ChromaDB", "Llama 2", "JWT"],
         image: ragImg,
         githubUrl: "https://github.com/Jrodrigo06/llm-health-recommender"
+    },
+
+    {
+        id: 5,
+        title: "GraphDTA Reimplementation",
+        description: `A reimplementation of the GraphDTA model for predicting drug-target binding affinity using graph neural networks. 
+        Wrote a paper explaining my implementation and the mathematical foundations behind it.`,
+        tags: ["PyTorch", "Deep Learning", "RDkit", "Python"],
+        image: graphdta,
+        githubUrl: "https://github.com/Jrodrigo06/GraphDTA-Replication"
+
     },
 
     {
@@ -43,7 +69,10 @@ const projects = [
         id: 4,
         title: "Personal Website",
         description : `This webiste I made to learn React and Typescript and to show what I've worked on, who I am as a person, and my goals for the future!`,
-        tags: ['React', 'Typescript', 'Tailwind CSS']
+        tags: ['React', 'Typescript', 'Tailwind CSS'],
+        image: portfolio,
+        githubUrl: "https://github.com/Jrodrigo06/personal-website"
+
     }
 ]
 
