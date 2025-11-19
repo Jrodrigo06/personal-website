@@ -64,6 +64,9 @@ export const About = () => {
                         </p>
                         <p>  </p>
                         <p>
+                        Right now I'm a tech lead at Generate for Unsprawl, where I'm working with a team of 8 to build an app to deduplicate tasks and help product managers get insights on their team's tasks!
+                        </p>
+                        <p>
                             I'm from Albany, NY and now am mostly in Boston at Northeastern. Outside of class and work, I spend a lot of my free time cooking, gaming with friends, watching shows,
                             or with a camera taking pictures of whatever catches my eye!
                         </p>
