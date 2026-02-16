@@ -68,10 +68,11 @@ export const About = () => {
           location: "Boston, MA",
           roles: [
             {
-              title: "Tech Lead - ???",
+              title: "Tech Lead - Remetra",
               date: "Dec 2025 - Present",
               bullets: [
-                "New project 🫣...",
+                "Leading an 8-person team building a health tracking platform with ML-powered analytics using React Native, FastAPI, and PostgreSQL",
+                "Architected backend infrastructure with containerized testing, CI/CD pipelines, and established development workflows for team members"
               ]
             },
             {
@@ -91,10 +92,10 @@ export const About = () => {
           location: "Boston, MA",
           roles: [
             {
-              title: "Incoming Software/ML Engineering Co-op",
+              title: "Software/ML Engineering Co-op",
               date: "Jan 2026 - Jun 2026",
               bullets: [
-                "Incoming ML SWE"
+                "Building scalable ML service infrastructure and evaluation pipelines using Python, Airflow, and Kubernetes for computer vision systems"
               ]
             }
           ]
